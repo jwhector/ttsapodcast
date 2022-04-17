@@ -18,6 +18,7 @@ body {
     font-family: 'Amatic SC', cursive;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
 .background-imgs {
@@ -40,4 +41,15 @@ body {
 .background-imgs img:hover {
     transition: ease-in 0.2s;
     opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .background-imgs {
+        flex-direction: column;
+    }
+
+    .background-imgs img {
+        width: 100vw;
+        height: 33.33vh;
+    }
 }
